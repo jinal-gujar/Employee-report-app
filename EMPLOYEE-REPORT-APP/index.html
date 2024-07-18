@@ -1,0 +1,235 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Weekly Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <div>
+      <h2>File Upload</h2>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" id="fileInput" name="file" accept=".json">
+      
+      <button onclick="uploadAndFetchData(event)">Upload Data</button>
+    </form>
+    <button onclick="handleFileUpload()">Get Visualization</button>
+    <!-- Add a new button for visualization -->
+<button onclick="visualizeUpdatedData()">Visualize Updated Data</button>
+  
+    <div id="resultContainer"></div>
+    
+      Visualization Section 
+     <div>
+      <h2>Data Visualization</h2>
+      <canvas id="visualizationChart" width="400" height="200"></canvas>
+     </div>
+
+ <label for="weekSelector">Select Week:</label>
+    <select id="weekSelector"></select>
+
+    <label for="employeeSelector">Select Employee:</label>
+    <select id="employeeSelector"></select>
+     
+     <canvas id="weeklyReportChart" width="800" height="400"></canvas>
+    <!--<canvas id="monthlyReportChart" width="800" height="400"></canvas> 
+    
+    <canvas id="quarterlyReportChart" width="800" height="400"></canvas> -->
+
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+
+    <!-- <script>
+         // Define the maximum number of weeks and employees
+      const maxWeeks = 52;  // Set your desired maximum number of weeks
+      const maxEmployees = 10;  // Set your desired maximum number of employees
+     
+    
+        document.addEventListener('DOMContentLoaded', function () {
+    // ... (existing code) ...
+
+    // Populate week/month dropdown dynamically
+    const weekSelector = document.getElementById('weekSelector');
+    //const maxWeeks = 52; // Set your desired maximum number of weeks
+    const months = [
+      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+    ];
+      
+    // Populate week dropdown dynamically
+    for (let week = 1; week <= maxWeeks; week++) {
+            const option = document.createElement('option');
+            option.value = week;
+            option.text = `Week ${week}`;
+            document.getElementById('weekSelector').appendChild(option);
+        }
+   
+    months.forEach((month, index) => {
+    const option = document.createElement('option');
+    const monthNumber = index + 1;
+    option.value = month;
+    option.text = month;
+    weekSelector.appendChild(option);
+});
+
+const quarters = ['Q1', 'Q2', 'Q3', 'Q4'];
+
+for (let quarterIndex = 0; quarterIndex < quarters.length; quarterIndex++) {
+  const quarter = quarters[quarterIndex];
+  
+  // Add the quarter option
+  const quarterOption = document.createElement('option');
+  quarterOption.value = quarter;
+  quarterOption.text = quarter;
+  weekSelector.appendChild(quarterOption);
+}
+
+
+    // ... (existing code) ...
+  });
+        // Populate employee dropdown dynamically
+        for (let emp = 1; emp <= maxEmployees; emp++) {
+            const option = document.createElement('option');
+            option.value = emp;
+            option.text = `Emp ${emp}`;
+            document.getElementById('employeeSelector').appendChild(option);
+        }
+
+        // Add "All Employees" option to the employee dropdown
+        const allEmployeesOption = document.createElement('option');
+        allEmployeesOption.value = ''; // You can set it to some specific value if needed
+        allEmployeesOption.text = 'All Employees';
+        document.getElementById('employeeSelector').appendChild(allEmployeesOption);
+
+        
+
+
+        function handleFileUpload() {
+            const fileInput = document.getElementById('fileInput');
+
+            // Check if a file is selected
+            if (fileInput.files.length > 0) {
+                const selectedFile = fileInput.files[0];
+
+                // Read the content of the file
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    const fileContent = event.target.result;
+
+                    try {
+                        // Parse the JSON content
+                        const jsonData = JSON.parse(fileContent);
+
+                        // Call a function to visualize the data
+                        visualizeDataFromJson(jsonData);
+                    } catch (error) {
+                        console.error('Error parsing JSON file:', error.message);
+                        alert('Invalid JSON file. Please upload a valid JSON file.');
+                    }
+                };
+
+                reader.readAsText(selectedFile);
+            } else {
+                alert('Please select a JSON file.');
+            }
+        }
+
+        function visualizeDataFromJson(jsonData) {
+            // Extract unique technologies
+            const technologies = [...new Set(jsonData.flatMap(report => report.tasks.map(task => task.Technology)))];
+
+            // Create datasets for Chart.js
+            const datasets = jsonData.map((report, index) => ({
+                label: `Week ${report.WeekNum}`,
+                data: report.tasks.map(task => task.daysSpent),
+                backgroundColor: report.tasks.map(() => `rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255},0.7)`),
+                borderWidth: 1,
+            }));
+
+            // Get the canvas element for the visualization chart
+            const chartCanvas = document.getElementById('visualizationChart');
+
+            // Destroy the existing chart instance if it exists
+            if (window.myChart) {
+                window.myChart.destroy();
+            }
+
+            // Render the visualization chart
+            const ctx = chartCanvas.getContext('2d');
+            console.log('Chart Data:', technologies, datasets);
+
+            window.myChart = new Chart(ctx, {
+                type: 'bar', // Set chart type to 'bar'
+                data: {
+                    labels: technologies,
+                    datasets: datasets,
+                },
+                options: {
+                    scales: {
+                        x: { title: { display: true, text: 'Technology' }, stacked: true },
+                        y: { title: { display: true, text: 'Days Spent' }, stacked: true },
+                    },
+                    maintainAspectRatio: true, // Set to false to allow custom sizing
+                    responsive: true, // Set to true to allow responsiveness
+                    aspectRatio: 2.5,
+                },
+            });
+        }
+
+        async function uploadAndFetchData(event) {
+  event.preventDefault();
+
+  const fileInput = document.getElementById('fileInput');
+
+  if (fileInput.files.length > 0) {
+    const formData = new FormData();
+    formData.append('file', fileInput.files[0]);
+
+    try {
+      const response = await fetch('http://localhost:3000/uploadAndMergeWeeklyReportData', {
+        method: 'POST',
+        body: formData,  // Do not stringify FormData
+      });
+
+      if (response.ok) {
+        alert('Weekly report data updated successfully');
+        const fetchDataResponse = await fetch('http://localhost:3000/getMergedWeeklyReportData');
+        const data = await fetchDataResponse.json();
+        const resultContainer = document.getElementById('resultContainer');
+        resultContainer.innerText = JSON.stringify(data, null, 2);
+      
+    } else {
+        console.error('Failed to upload the file.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  } else {
+    alert('Please select a JSON file.');
+  }
+}
+
+async function visualizeUpdatedData() {
+  try {
+    // Fetch the updated data
+    const fetchDataResponse = await fetch('http://localhost:3000/getMergedWeeklyReportData');
+    const data = await fetchDataResponse.json();
+
+    // Visualize the updated data
+    visualizeDataFromJson(data);
+  } catch (error) {
+    console.error('Error fetching or visualizing updated data:', error);
+  }
+}
+
+
+// Ensure functions are global
+window.uploadAndFetchData = uploadAndFetchData;
+window.visualizeUpdatedData = visualizeUpdatedData;
+window.handleFileUpload = handleFileUpload;
+window.visualizeDataFromJson = visualizeDataFromJson;
+
+    </script>  -->
+</body>
+</html>

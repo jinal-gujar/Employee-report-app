@@ -1,0 +1,737 @@
+[
+  {
+    "EmpNum": 1,
+    "WeekNum": 1,
+    "tasks": [
+      {
+        "Technology": "IOT",
+        "taskName": "IOT course 1",
+        "startDate": "01/01/2024",
+        "endDate": "01/01/2024",
+        "daysSpent": 0.5
+      },
+      {
+        "Technology": "IOT",
+        "taskName": "IOT course 2",
+        "startDate": "01/01/2024",
+        "endDate": "02/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 2,
+    "tasks": [
+      {
+        "Technology": "Web Development",
+        "taskName": "Build website prototype",
+        "startDate": "02/01/2024",
+        "endDate": "03/01/2024",
+        "daysSpent": 2
+      }
+    ]
+  },
+  {
+    "EmpNum": 2,
+    "WeekNum": 1,
+    "tasks": [
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "Design UI for mobile app",
+        "startDate": "01/01/2024",
+        "endDate": "02/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 3,
+    "tasks": [
+      {
+        "Technology": "IOT",
+        "taskName": "IOT course 3",
+        "startDate": "03/01/2024",
+        "endDate": "04/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Web Development",
+        "taskName": "Responsive design",
+        "startDate": "03/01/2024",
+        "endDate": "04/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 4,
+    "tasks": [
+      {
+        "Technology": "Web Development",
+        "taskName": "Backend implementation",
+        "startDate": "04/01/2024",
+        "endDate": "05/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 2,
+    "WeekNum": 2,
+    "tasks": [
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "Implement features",
+        "startDate": "04/01/2024",
+        "endDate": "05/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 5,
+    "tasks": [
+      {
+        "Technology": "IOT",
+        "taskName": "IOT course 4",
+        "startDate": "05/01/2024",
+        "endDate": "06/01/2024",
+        "daysSpent": 2.5
+      },
+      {
+        "Technology": "Database",
+        "taskName": "Optimize queries",
+        "startDate": "05/01/2024",
+        "endDate": "06/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 6,
+    "tasks": [
+      {
+        "Technology": "Web Development",
+        "taskName": "Frontend design",
+        "startDate": "06/01/2024",
+        "endDate": "07/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "UI improvements",
+        "startDate": "06/01/2024",
+        "endDate": "07/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 2,
+    "WeekNum": 3,
+    "tasks": [
+      {
+        "Technology": "Database",
+        "taskName": "Database optimization",
+        "startDate": "07/01/2024",
+        "endDate": "08/01/2024",
+        "daysSpent": 2.5
+      },
+      {
+        "Technology": "Web Development",
+        "taskName": "Backend enhancements",
+        "startDate": "07/01/2024",
+        "endDate": "08/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 7,
+    "tasks": [
+      {
+        "Technology": "IOT",
+        "taskName": "IOT course 5",
+        "startDate": "08/01/2024",
+        "endDate": "09/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "Feature implementation",
+        "startDate": "08/01/2024",
+        "endDate": "09/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 8,
+    "tasks": [
+      {
+        "Technology": "Web Development",
+        "taskName": "Testing",
+        "startDate": "09/01/2024",
+        "endDate": "10/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Database",
+        "taskName": "Data migration",
+        "startDate": "09/01/2024",
+        "endDate": "10/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 2,
+    "WeekNum": 4,
+    "tasks": [
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "Testing",
+        "startDate": "10/01/2024",
+        "endDate": "11/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 9,
+    "tasks": [
+      {
+        "Technology": "IOT",
+        "taskName": "IOT course 6",
+        "startDate": "11/01/2024",
+        "endDate": "12/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Web Development",
+        "taskName": "Security enhancements",
+        "startDate": "11/01/2024",
+        "endDate": "12/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 10,
+    "tasks": [
+      {
+        "Technology": "Web Development",
+        "taskName": "Finalize Frontend",
+        "startDate": "12/01/2024",
+        "endDate": "13/01/2024",
+        "daysSpent": 1.5
+      },
+      {
+        "Technology": "Database",
+        "taskName": "Performance Tuning",
+        "startDate": "12/01/2024",
+        "endDate": "13/01/2024",
+        "daysSpent": 2
+      }
+    ]
+  },
+  {
+    "EmpNum": 2,
+    "WeekNum": 5,
+    "tasks": [
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "Release Version 1.0",
+        "startDate": "11/01/2024",
+        "endDate": "12/01/2024",
+        "daysSpent": 2.5
+      },
+      {
+        "Technology": "Database",
+        "taskName": "Backup and Recovery",
+        "startDate": "11/01/2024",
+        "endDate": "12/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 11,
+    "tasks": [
+      {
+        "Technology": "IOT",
+        "taskName": "Final IOT Project",
+        "startDate": "13/01/2024",
+        "endDate": "14/01/2024",
+        "daysSpent": 2.5
+      },
+      {
+        "Technology": "Web Development",
+        "taskName": "User Acceptance Testing",
+        "startDate": "13/01/2024",
+        "endDate": "14/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 2,
+    "WeekNum": 6,
+    "tasks": [
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "User Feedback Analysis",
+        "startDate": "12/01/2024",
+        "endDate": "13/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Web Development",
+        "taskName": "Bug Fixes",
+        "startDate": "12/01/2024",
+        "endDate": "13/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 12,
+    "tasks": [
+      {
+        "Technology": "Database",
+        "taskName": "Security Audit",
+        "startDate": "14/01/2024",
+        "endDate": "15/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "IOT",
+        "taskName": "Integration Testing",
+        "startDate": "14/01/2024",
+        "endDate": "15/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 2,
+    "WeekNum": 7,
+    "tasks": [
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "Performance Testing",
+        "startDate": "13/01/2024",
+        "endDate": "14/01/2024",
+        "daysSpent": 2.5
+      },
+      {
+        "Technology": "IOT",
+        "taskName": "Finalize IOT Project",
+        "startDate": "13/01/2024",
+        "endDate": "14/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 13,
+    "tasks": [
+      {
+        "Technology": "Web Development",
+        "taskName": "Documentation",
+        "startDate": "15/01/2024",
+        "endDate": "16/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "Optimization",
+        "startDate": "15/01/2024",
+        "endDate": "16/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 2,
+    "WeekNum": 8,
+    "tasks": [
+      {
+        "Technology": "IOT",
+        "taskName": "IOT Workshop",
+        "startDate": "14/01/2024",
+        "endDate": "15/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Web Development",
+        "taskName": "Feature Additions",
+        "startDate": "14/01/2024",
+        "endDate": "15/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 1,
+    "WeekNum": 14,
+    "tasks": [
+      {
+        "Technology": "Mobile App Development",
+        "taskName": "Security Patch",
+        "startDate": "16/01/2024",
+        "endDate": "17/01/2024",
+        "daysSpent": 2.5
+      },
+      {
+        "Technology": "Database",
+        "taskName": "Backup Testing",
+        "startDate": "16/01/2024",
+        "endDate": "17/01/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 2,
+    "WeekNum": 9,
+    "tasks": [
+      {
+        "Technology": "Web Development",
+        "taskName": "UI Refinements",
+        "startDate": "15/01/2024",
+        "endDate": "16/01/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Database",
+        "taskName": "Data Archiving",
+        "startDate": "15/01/2024",
+        "endDate": "16/01/2024",
+        "daysSpent": 1.5
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 1,
+    "tasks": [
+      {
+        "Technology": "GraphQL",
+        "taskName": "GraphQL Course",
+        "startDate": "2/1/2024",
+        "endDate": "3/1/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "ChartJS",
+        "taskName": "ChartJS Course",
+        "startDate": "3/1/2024",
+        "endDate": "4/1/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "ChartJS",
+        "taskName": "Raised PR for ChartJS Course",
+        "startDate": "4/1/2024",
+        "endDate": "4/1/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "GraphQL, ChartJS",
+        "taskName": "Project using GraphQL and ChartJS",
+        "startDate": "4/1/2024",
+        "endDate": "13/1/2024",
+        "daysSpent": 10
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 2,
+    "tasks": [
+      {
+        "Technology": "GraphQL, ChartJS",
+        "taskName": "Project using GraphQL and ChartJS",
+        "startDate": "8/1/2024",
+        "endDate": "15/1/2024",
+        "daysSpent": 8
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 3,
+    "tasks": [
+      {
+        "Technology": "GraphQL, ChartJS",
+        "taskName": "Project using GraphQL and ChartJS - Adding New Functionalities",
+        "startDate": "23/1/2024",
+        "endDate": "31/1/2024",
+        "daysSpent": 9
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 4,
+    "tasks": [
+      {
+        "Technology": "GraphQL, ChartJS",
+        "taskName": "Project using GraphQL and ChartJS - Adding New Functionalities",
+        "startDate": "23/1/2024",
+        "endDate": "31/1/2024",
+        "daysSpent": 9
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 5,
+    "tasks": [
+      {
+        "Technology": "ChartJS",
+        "taskName": "Solving the Errors and Setting up the ChartJS Project on Test Laptop",
+        "startDate": "29/1/2024",
+        "endDate": "29/1/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "ChartJS",
+        "taskName": "Resolving the Errors Related to Monthly Graph Display",
+        "startDate": "30/1/2024",
+        "endDate": "31/1/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "ChartJS",
+        "taskName": "Updated the PR",
+        "startDate": "31/1/2024",
+        "endDate": "31/1/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 1,
+    "tasks": [
+      {
+        "Technology": "GraphQL",
+        "taskName": "GraphQL Course",
+        "startDate": "2/1/2024",
+        "endDate": "3/1/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "ChartJS",
+        "taskName": "ChartJS Course",
+        "startDate": "3/1/2024",
+        "endDate": "4/1/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "ChartJS",
+        "taskName": "Raised PR for ChartJS Course",
+        "startDate": "4/1/2024",
+        "endDate": "4/1/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "GraphQL, ChartJS",
+        "taskName": "Project using GraphQL and ChartJS",
+        "startDate": "4/1/2024",
+        "endDate": "13/1/2024",
+        "daysSpent": 10
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 2,
+    "tasks": [
+      {
+        "Technology": "GraphQL, ChartJS",
+        "taskName": "Project using GraphQL and ChartJS",
+        "startDate": "8/1/2024",
+        "endDate": "15/1/2024",
+        "daysSpent": 8
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 3,
+    "tasks": [
+      {
+        "Technology": "GraphQL, ChartJS",
+        "taskName": "Project using GraphQL and ChartJS - Adding New Functionalities",
+        "startDate": "23/1/2024",
+        "endDate": "31/1/2024",
+        "daysSpent": 9
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 4,
+    "tasks": [
+      {
+        "Technology": "GraphQL, ChartJS",
+        "taskName": "Project using GraphQL and ChartJS - Adding New Functionalities",
+        "startDate": "23/1/2024",
+        "endDate": "31/1/2024",
+        "daysSpent": 9
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 5,
+    "tasks": [
+      {
+        "Technology": "ChartJS",
+        "taskName": "Solving the Errors and Setting up the ChartJS Project on Test Laptop",
+        "startDate": "29/1/2024",
+        "endDate": "29/1/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "ChartJS",
+        "taskName": "Resolving the Errors Related to Monthly Graph Display",
+        "startDate": "30/1/2024",
+        "endDate": "31/1/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "ChartJS",
+        "taskName": "Updated the PR",
+        "startDate": "31/1/2024",
+        "endDate": "31/1/2024",
+        "daysSpent": 1
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 14,
+    "tasks": [
+      {
+        "Technology": "Dreamweaver",
+        "taskName": "Dreamweaver course",
+        "startDate": "2/4/2024",
+        "endDate": "2/4/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "Dreamweaver",
+        "taskName": "Raised PR for Dreamweaver course",
+        "startDate": "2/4/2024",
+        "endDate": "3/4/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Canva",
+        "taskName": "Canva setup on test PC",
+        "startDate": "3/4/2024",
+        "endDate": "3/4/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "Digital Marketing",
+        "taskName": "Digital Marketing course 1",
+        "startDate": "3/4/2024",
+        "endDate": "4/4/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Digital Marketing",
+        "taskName": "Digital Marketing course 2",
+        "startDate": "4/4/2024",
+        "endDate": "5/4/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Speech to Text",
+        "taskName": "Speech to text tools analysis",
+        "startDate": "5/4/2024",
+        "endDate": "6/4/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Angular",
+        "taskName": "Angular course",
+        "startDate": "6/4/2024",
+        "endDate": "8/4/2024",
+        "daysSpent": 3
+      }
+    ]
+  },
+  {
+    "EmpNum": 6,
+    "WeekNum": 14,
+    "tasks": [
+      {
+        "Technology": "Dreamweaver",
+        "taskName": "Dreamweaver course",
+        "startDate": "2/4/2024",
+        "endDate": "2/4/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "Dreamweaver",
+        "taskName": "Raised PR for Dreamweaver course",
+        "startDate": "2/4/2024",
+        "endDate": "3/4/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Canva",
+        "taskName": "Canva setup on test PC",
+        "startDate": "3/4/2024",
+        "endDate": "3/4/2024",
+        "daysSpent": 1
+      },
+      {
+        "Technology": "Digital Marketing",
+        "taskName": "Digital Marketing course 1",
+        "startDate": "3/4/2024",
+        "endDate": "4/4/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Digital Marketing",
+        "taskName": "Digital Marketing course 2",
+        "startDate": "4/4/2024",
+        "endDate": "5/4/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Speech to Text",
+        "taskName": "Speech to text tools analysis",
+        "startDate": "5/4/2024",
+        "endDate": "6/4/2024",
+        "daysSpent": 2
+      },
+      {
+        "Technology": "Angular",
+        "taskName": "Angular course",
+        "startDate": "6/4/2024",
+        "endDate": "8/4/2024",
+        "daysSpent": 3
+      }
+    ]
+  }
+]
